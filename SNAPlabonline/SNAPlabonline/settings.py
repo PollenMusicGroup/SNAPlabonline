@@ -13,8 +13,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os, json
 
 
-with open('/Users/hari/repos/SNAPlabonline/config.json') as fp:
-    config = json.load(fp)
+# with open('/Users/hari/repos/SNAPlabonline/config.json') as fp:
+#     config = json.load(fp)
+
+config = {'SECRET_KEY': 'xxxxxxxxxxx', 'EMAIL_USER': 'testuser@test.com', 'EMAIL_PASS': 'testpassword'}
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
